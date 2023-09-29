@@ -56,3 +56,6 @@ Após iniciar o ```servidor```, ele estará pronto para receber conexões de cli
 Agora que o servidor está em execução, você pode criar um ```cliente``` (um programa Python separado) que se conecte ao servidor e chame os métodos ```RPC```, conforme explicado na resposta anterior.
 
 Certifique-se de que o ```cliente``` esteja configurado para se conectar ao endereço ```'localhost'``` (ou o endereço onde o ```servidor``` está sendo executado) na porta 18812 (a mesma porta que o ```servidor``` está ouvindo). Quando o cliente se conecta ao servidor, ele pode chamar os métodos ```exposed_calculate_imc```, ```exposed_calculate_quadraticEquation``` e ```exposed_check_palindrome``` como mencionado na resposta anterior para usar os serviços do ```servidor RPC```.
+
+**Encerrar o servidor:**
+Para encerrar o servidor ```RPC``` que você configurou e está em execução, você pode fazê-lo manualmente ao pressionar ```Ctrl+C``` no ```terminal``` onde o servidor está em execução. Isso enviará um sinal de interrupção para o ```servidor``` e encerrará a execução do programa do ```servidor```.
