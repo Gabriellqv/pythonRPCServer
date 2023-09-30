@@ -9,7 +9,7 @@ Parâmetros:
 ```height```: Altura da pessoa em metros (float).
 Utilização:
 
-Chame o método ```exposed_calculate_imc``` do servidor RPC, fornecendo o peso e a altura como argumentos. O método retornará o valor do IMC calculado com base nos valores fornecidos.
+Chame o método ```exposed_calculate_imc``` do servidor RPC, fornecendo o peso e a altura como argumentos. O método retornará o valor do ```IMC``` calculado com base nos valores fornecidos e uma descrição do estado de saúde com base no valor do ```IMC```.
 
 **Serviço de Resolução de Equações de Segundo Grau**
 Método no Servidor:
