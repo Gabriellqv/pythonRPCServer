@@ -38,18 +38,18 @@ class MyService(rpyc.Service):
     def exposed_calculate_quadraticEquation(self, a, b, c):
         import math
 
-        # Verifica as condicoes e calculas as raizes
+        # Verifica as condicoes e calcula as raizes
         discriminant = b**2 - 4 * a * c
         if discriminant > 0:
             x1 = (-b + math.sqrt(discriminant)) / (2 * a)
             x2 = (-b - math.sqrt(discriminant)) / (2 * a)
             return x1, x2
         elif discriminant == 0:
-            # Raiz real única (raízes iguais)
+            # Raiz real única (raizes iguais)
             x1 = -b / (2 * a)
             return x1
         else:
-            # Não há raízes reais (raízes complexas)
+            # Não há raízes reais (raizes complexas)
             real_part = -b / (2 * a)
             imaginary_part = math.sqrt(-discriminant) / (2 * a)
             return real_part + imaginary_part * 1j, real_part - imaginary_part * 1j
