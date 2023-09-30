@@ -49,7 +49,7 @@ class MyService(rpyc.Service):
             x1 = -b / (2 * a)
             return x1
         else:
-            # Não há raízes reais (raizes complexas)
+            # Não há raizes reais (raizes complexas)
             real_part = -b / (2 * a)
             imaginary_part = math.sqrt(-discriminant) / (2 * a)
             return real_part + imaginary_part * 1j, real_part - imaginary_part * 1j
